@@ -1,0 +1,40 @@
+-- SQL example
+-- 创建一个名为 `employees` 的表
+CREATE TABLE employees (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    hire_date DATE,
+    salary DECIMAL(10, 2)
+);
+
+-- 插入一些示例数据
+INSERT INTO employees (first_name, last_name, email, hire_date, salary) VALUES
+('John', 'Doe', 'john.doe@example.com', '2020-01-15', 50000.00),
+('Jane', 'Smith', 'jane.smith@example.com', '2019-05-20', 55000.00),
+('Michael', 'Johnson', 'michael.johnson@example.com', '2021-08-10', 60000.00);
+
+-- 查询所有员工
+SELECT * FROM employees;
+
+-- 查询特定条件的员工（例如，薪水大于52000的员工）
+SELECT * FROM employees WHERE salary > 52000;
+
+-- 更新员工的薪水（例如，给ID为1的员工加薪1000）
+UPDATE employees SET salary = salary + 1000 WHERE id = 1;
+
+-- 删除特定条件的员工（例如，删除ID为2的员工）
+DELETE FROM employees WHERE id = 2;
+
+-- 查询并排序（例如，按薪水降序排列）
+SELECT * FROM employees ORDER BY salary DESC;
+
+-- 计算平均薪水
+SELECT AVG(salary) AS average_salary FROM employees;
+
+-- 计算每个员工的年薪
+SELECT first_name, last_name, salary * 12 AS annual_salary FROM employees;
+
+-- 统计员工数量
+SELECT COUNT(*) AS total_employees FROM employees;

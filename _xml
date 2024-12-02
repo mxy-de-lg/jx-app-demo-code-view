@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book id="bk101">
+        <title>Programming in Python</title>
+        <author>John Doe</author>
+        <year>2020</year>
+        <isbn>978-3-16-148410-0</isbn>
+        <chapters>
+            <chapter number="1">
+                <title>Introduction to Python</title>
+                <pages>15</pages>
+            </chapter>
+            <chapter number="2">
+                <title>Data Types and Variables</title>
+                <pages>30</pages>
+            </chapter>
+            <chapter number="3">
+                <title>Control Structures</title>
+                <pages>45</pages>
+            </chapter>
+        </chapters>
+    </book>
+    <book id="bk102">
+        <title>Advanced JavaScript</title>
+        <author>Jane Smith</author>
+        <year>2019</year>
+        <isbn>978-1-23-456789-7</isbn>
+        <chapters>
+            <chapter number="1">
+                <title>JavaScript Basics</title>
+                <pages>20</pages>
+            </chapter>
+            <chapter number="2">
+                <title>DOM Manipulation</title>
+                <pages>40</pages>
+            </chapter>
+            <chapter number="3">
+                <title>AJAX and APIs</title>
+                <pages>55</pages>
+            </chapter>
+        </chapters>
+    </book>
+    <book id="bk103">
+        <title>Web Development with HTML5</title>
+        <author>Emily Johnson</author>
+        <year>2021</year>
+        <isbn>978-0-987-65432-1</isbn>
+        <chapters>
+            <chapter number="1">
+                <title>HTML5 Overview</title>
+                <pages>10</pages>
+            </chapter>
+            <chapter number="2">
+                <title>Forms and Input Elements</title>
+                <pages>25</pages>
+            </chapter>
+            <chapter number="3">
+                <title>Responsive Design</title>
+                <pages>35</pages>
+            </chapter>
+        </chapters>
+    </book>
+</library>

@@ -1,0 +1,118 @@
+{
+    "code": 0,
+    "message": "0",
+    "ttl": 1,
+    "data": {
+        "aid": 113558431994890,
+        "bvid": "BV1YYzFYZE1x",
+        "allow_bp": false,
+        "no_share": false,
+        "cid": 27068598839,
+        "max_limit": 1000,
+        "page_no": 1,
+        "has_next": false,
+        "ip_info": {
+            "ip": "223.76.127.46",
+            "zone_ip": " 10.158.97.11",
+            "zone_id": 4587552,
+            "country": "中国",
+            "province": "湖北",
+            "city": "武汉"
+        },
+        "login_mid": 1870343,
+        "login_mid_hash": "baaca147",
+        "is_owner": false,
+        "name": "GuoRL",
+        "permission": "10000,1001",
+        "level_info": {
+            "current_level": 5,
+            "current_min": 10800,
+            "current_exp": 15655,
+            "next_exp": 28800,
+            "level_up": 1693500235
+        },
+        "vip": {
+            "type": 0,
+            "status": 0,
+            "due_date": 0,
+            "vip_pay_type": 0,
+            "theme_type": 0,
+            "label": {
+                "path": "",
+                "text": "",
+                "label_theme": "",
+                "text_color": "",
+                "bg_style": 0,
+                "bg_color": "",
+                "border_color": "",
+                "use_img_label": true,
+                "img_label_uri_hans": "",
+                "img_label_uri_hant": "",
+                "img_label_uri_hans_static": "https://i0.hdslb.com/bfs/vip/d7b702ef65a976b20ed854cbd04cb9e27341bb79.png",
+                "img_label_uri_hant_static": "https://i0.hdslb.com/bfs/activity-plat/static/20220614/e369244d0b14644f5e1a06431e22a4d5/KJunwh19T5.png"
+            },
+            "avatar_subscript": 0,
+            "nickname_color": "",
+            "role": 0,
+            "avatar_subscript_url": "",
+            "tv_vip_status": 0,
+            "tv_vip_pay_type": 0,
+            "tv_due_date": 0,
+            "avatar_icon": {
+                "icon_resource": {}
+            }
+        },
+        "answer_status": 0,
+        "block_time": 0,
+        "role": "0",
+        "last_play_time": 0,
+        "last_play_cid": 0,
+        "now_time": 1732878053,
+        "online_count": 1,
+        "need_login_subtitle": false,
+        "subtitle": {
+            "allow_submit": false,
+            "lan": "",
+            "lan_doc": "",
+            "subtitles": []
+        },
+        "view_points": [],
+        "preview_toast": "为创作付费，购买观看完整视频|购买观看",
+        "options": {
+            "is_360": false,
+            "without_vip": false
+        },
+        "guide_attention": [],
+        "jump_card": [],
+        "operation_card": [],
+        "online_switch": {
+            "enable_gray_dash_playback": "500",
+            "new_broadcast": "1",
+            "realtime_dm": "1",
+            "subtitle_submit_switch": "1"
+        },
+        "fawkes": {
+            "config_version": 30787,
+            "ff_version": 21289
+        },
+        "show_switch": {
+            "long_progress": false
+        },
+        "bgm_info": null,
+        "toast_block": false,
+        "is_upower_exclusive": false,
+        "is_upower_play": false,
+        "is_ugc_pay_preview": false,
+        "elec_high_level": {
+            "privilege_type": 0,
+            "title": "",
+            "sub_title": "",
+            "show_button": false,
+            "button_text": "",
+            "jump_url": "",
+            "intro": "",
+            "new": false
+        },
+        "disable_show_up_info": false
+    }
+}

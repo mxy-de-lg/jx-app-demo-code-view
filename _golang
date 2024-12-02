@@ -1,0 +1,82 @@
+// Go example
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"os"
+	"sort"
+)
+
+type Person struct {
+	Id   int    `json:"id"`
+	Name string `json:"name"`
+	Age  int    `json:"age"`
+}
+
+func main() {
+	// 创建一些示例数据
+	people := []Person{
+		{Id: 1, Name: "Alice", Age: 30},
+		{Id: 2, Name: "Bob", Age: 25},
+		{Id: 3, Name: "Charlie", Age: 35},
+	}
+
+	// 使用 sort.Slice 对 people 按年龄排序
+	sort.Slice(people, func(i, j int) bool {
+		return people[i].Age < people[j].Age
+	})
+
+	fmt.Println("Sorted People by Age:")
+	for _, person := range people {
+		fmt.Printf("%s, %d\n", person.Name, person.Age)
+	}
+
+	// 写入文件
+	filePath := "people.json"
+	err := WriteToFile(people, filePath)
+	if err != nil {
+		fmt.Printf("An error occurred: %v\n", err)
+		return
+	}
+
+	// 从文件读取
+	readPeople, err := ReadFromFile(filePath)
+	if err != nil {
+		fmt.Printf("An error occurred: %v\n", err)
+		return
+	}
+
+	fmt.Println("\nPeople read from file:")
+	for _, person := range readPeople {
+		fmt.Printf("%s, %d\n", person.Name, person.Age)
+	}
+}
+
+func WriteToFile(people []Person, filePath string) error {
+	data, err := json.MarshalIndent(people, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	err = ioutil.WriteFile(filePath, data, 0644)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func ReadFromFile(filePath string) ([]Person, error) {
+	data, err := ioutil.ReadFile(filePath)
+	if err != nil {
+		return nil, err
+	}
+
+	var people []Person
+	err = json.Unmarshal(data, &people)
+	if err != nil {
+		return nil, err
+	}
+	return people, nil
+}

@@ -1,0 +1,70 @@
+% LaTeX example
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\title{A Comprehensive LaTeX Example}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+This document serves as a comprehensive example of using LaTeX for creating scientific documents. It includes sections, subsections, equations, figures, tables, and references.
+
+\section{Mathematics}
+Here is an example of an inline equation: \( E = mc^2 \).
+
+And here is a displayed equation:
+\[
+E = \frac{mc^2}{\sqrt{1 - \frac{v^2}{c^2}}}
+\]
+
+\section{Figures}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image-a}
+    \caption{Example figure}
+    \label{fig:example}
+\end{figure}
+
+Figure \ref{fig:example} shows an example image.
+
+\section{Tables}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{lccr}
+        \toprule
+        Item & Description & Quantity & Price \\
+        \midrule
+        Item 1 & Description of item 1 & 10 & \$10.00 \\
+        Item 2 & Description of item 2 & 5 & \$20.00 \\
+        Item 3 & Description of item 3 & 2 & \$30.00 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Example table}
+    \label{tab:example}
+\end{table}
+
+Table \ref{tab:example} shows an example table.
+
+\section{References}
+Here is a reference to section \ref{sec:methods} on page \pageref{sec:methods}.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\appendix
+\section{Appendix A}
+Additional information can be placed in the appendix.
+
+\end{document}
